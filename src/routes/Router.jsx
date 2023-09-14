@@ -1,6 +1,6 @@
 
-import {TeacherRouter} from "../moudules/teacher/routes/TeacherRoutes"
-import { studentsRoutes } from "../moudules/student/routes/StudentsRoutes"
+import {NewsRouter} from '../moudules/main/routes/NewsRoutes'
+import { AboutUsroutes} from '../moudules/main/routes/AboutUsRoutes'
 import Main from "../moudules/main/pages/main"
 import App from "../App"
 export const routes = [
@@ -16,12 +16,12 @@ export const routes = [
             element:<Main />,
             },
             
-            ...TeacherRouter,
-            ...studentsRoutes,
+           ...NewsRouter,
+            ...AboutUsroutes,
     
     
-        ]
+        ],
 
-     }
+     },
 
-]
+];

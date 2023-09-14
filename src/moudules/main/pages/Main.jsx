@@ -1,18 +1,33 @@
 
+import React from "react";
+import img from "../../../assets/Home.jpg"
+import Header from "../components/Header";
+import Category from "../components/Category";
+import Instructor from "../components/Instructor";
+import Education from "../components/Education";
+import Courses from "../components/Courses";
+import HomeAboutUS from "../components/HomeAboutUS";
+import HomeNews from "../components/SchoolNews";
+import Pricing from "../components/Pricing";
+import Testimonials from "../components/Testimonials";
+import ChoseUs from "../components/ChoseUs";
 
+export default function Main(){
 
-const Main = ()=>{
     return(
-        <>
-             
-        <h1 className="text-center">
-            Welcome to our Platform
-        </h1> 
-        <p className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure quidem, obcaecati maxime nemo ipsum ipsa? Dolorum beatae soluta fugit enim eum tempore! Accusantium officia sed esse sunt, blanditiis eius recusandae, dolorem error quae pariatur omnis labore id modi perspiciatis in dolor molestias numquam tempore sequi iusto explicabo veniam. Nesciunt.
-        </p>   
-        
+        <>     
+        <Header margin='-10rem' img={img} title='WHATCH THE VIDEO' btnTitle='EXPLORE COURSES' subTitle=' Education is the Mother of Leadership' />
+        <Category/>
+        <Instructor />
+        <Education/>
+        <Courses/>
+        <HomeAboutUS/>
+        <HomeNews/>
+        <Pricing/>
+        <Testimonials/>
+        <ChoseUs/>
+
         </>
     )
 }
-export default Main
+
